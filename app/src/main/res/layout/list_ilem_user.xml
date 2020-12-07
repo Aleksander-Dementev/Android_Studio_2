@@ -8,6 +8,5 @@
 <TextView
     android:id="@+id/userIten"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="ЭЛЕМЕНТ СПИСКА"/>
+    android:layout_height="wrap_content"/>
 </LinearLayout>

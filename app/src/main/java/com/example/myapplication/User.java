@@ -1,11 +1,12 @@
 package com.example.myapplication;
 
+import java.io.Serializable;
 import java.util.UUID;
 
-public class User {
-    private String userName;
-    private String userLastName;
-    private UUID uuid;
+public class User implements Serializable {
+    private String userName; // переменная имя
+    private String userLastName; // переменная фамилия
+    private UUID uuid; // идентификатор пользоватея
 // класс отвечащий за пользователей:
     public User() {
         this.uuid = UUID.randomUUID();

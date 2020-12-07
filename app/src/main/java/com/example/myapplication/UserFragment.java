@@ -12,12 +12,18 @@ import android.widget.TextView;
 public class  UserFragment extends Fragment {
     private User user;
     private TextView userName_userLastname_View;
-    @Override
+
+     @Override
     public void onCreate (Bundle sevedInstanceState){
     super.onCreate(sevedInstanceState);
-    user = new User();
-    user.setUserName("Иван");
-    user.setUserLastName("Иванов");
+    Bundle bundle = getArguments();
+    user = (User) bundle.getSerializable("user");
+
+
+    user = (User) sevedInstanceState.getSerializable("user");
+
+
+
     }
     @Override// момент форирования
     public View onCreateView (LayoutInflater inflater, ViewGroup container, Bundle sevedInstanceState){
