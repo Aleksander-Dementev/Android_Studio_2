@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.UserManager;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -27,12 +28,11 @@ public class MainActivity extends AppCompatActivity {
     //UserListFragment размещается на fagmentCotainer
 
 
-    /*
     @Override
     public void onBackPressed(){
-        super.onBackPressed();
-        Toast.makeText(MainActivity/this, "Сейчас будет выход", Toast.LENGTH_SHORT).show();
-    }*/
+      /*  super.onBackPressed();*/
+        startActivity(new Intent(MainActivity.this, MainActivity.class));
+    }
 
 
 
